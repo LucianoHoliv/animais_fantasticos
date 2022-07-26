@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 110px minmax(300px, 800px) 1fr;
+}
+
+.grid-section {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 110px 300px minmax(300px, 800px);
+}

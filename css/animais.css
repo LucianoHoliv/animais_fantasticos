@@ -1,0 +1,18 @@
+.grid-container nav {
+  grid-column: 3 / -1;
+}
+
+.menu {
+  display: flex;
+  padding: 10px;
+  margin-top: 2rem;
+  background: #fb5;
+}
+
+.titulo-section {
+  grid-column: 1 / -1;
+}
+
+.img-animais {
+  grid-column: 2;
+}
