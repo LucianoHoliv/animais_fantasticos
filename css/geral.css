@@ -3,11 +3,12 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  color: #000;
+  color: #222222;
 }
 
 body {
   background: #faf6ed;
+  margin-bottom: 120px;
 }
 
 img {

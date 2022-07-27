@@ -10,17 +10,17 @@
 }
 
 .menu li {
-padding: 10px 15px;
-font-size: .85rem;
-text-transform: uppercase;
-font-weight: 700;
-font-family: 'IBM Plex Mono', monospace;
-letter-spacing: 1.4px;
+  padding: 10px 15px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 1.4px;
 }
 
 .titulo-section {
   grid-column: 1 / -1;
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
   font-size: 6rem;
   line-height: 1;
   font-weight: 100;
@@ -31,4 +31,43 @@ letter-spacing: 1.4px;
   grid-column: 2;
   max-height: 372px;
   overflow-y: scroll;
+}
+
+.descricao-animais {
+  padding: 0 20px;
+}
+
+.descricao-animais h1 {
+  text-transform: uppercase;
+  color: #ee5544;
+  font-weight: 700;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 1.6px;
+  font-size: 1rem;
+  position: relative;
+  margin: 0 0 16px 55px;
+}
+
+.descricao-animais h1::before {
+  position: absolute;
+  content: " ";
+  height: 10px;
+  width: 40px;
+  background: #fb5;
+  top: 5px;
+  left: -55px;
+}
+
+.descricao-animais p {
+  font-family: Helvetica, arial;
+  margin-bottom: 1rem;
+}
+
+.img-animais::-webkit-scrollbar {
+  width: 14px; /* width of the entire scrollbar */
+}
+
+.img-animais::-webkit-scrollbar-thumb {
+  background-color: #fb5; /* color of the scroll thumb */
+  border-left: 4px solid #faf6ed; /* creates padding around scroll thumb */
 }
