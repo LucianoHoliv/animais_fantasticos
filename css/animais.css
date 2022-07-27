@@ -9,10 +9,26 @@
   background: #fb5;
 }
 
+.menu li {
+padding: 10px 15px;
+font-size: .85rem;
+text-transform: uppercase;
+font-weight: 700;
+font-family: 'IBM Plex Mono', monospace;
+letter-spacing: 1.4px;
+}
+
 .titulo-section {
   grid-column: 1 / -1;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 100;
+  margin: 2.6rem 0;
 }
 
 .img-animais {
   grid-column: 2;
+  max-height: 372px;
+  overflow-y: scroll;
 }

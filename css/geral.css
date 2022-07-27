@@ -3,6 +3,11 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  color: #000;
+}
+
+body {
+  background: #faf6ed;
 }
 
 img {
@@ -16,7 +21,7 @@ img {
 }
 
 .grid-section {
-  grid-column: 2;
+  grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 110px 300px minmax(300px, 800px);
 }
