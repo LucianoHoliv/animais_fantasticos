@@ -1,3 +1,37 @@
 dl {
- grid-column: 2 / 4;
+  grid-column: 2 / 4;
+  padding-top: 4rem;
+}
+
+.faq-lista dt {
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ee5544;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.faq-lista dt::before {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 10px;
+  background-color: #fb5;
+  left: 0;
+  top: 6px;
+}
+
+.faq-lista dt::after {
+  position: relative;
+  content: "▼";
+  left: 10px;
+  font-size: .9rem;
+}
+
+.faq-lista dd {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px 0 30px 30px;
 }
