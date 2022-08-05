@@ -37,6 +37,10 @@
   overflow-y: scroll;
 }
 
+.img-animais li {
+  cursor: pointer;
+}
+
 .descricao-animais {
   padding: 0 20px;
 }
@@ -65,6 +69,26 @@
 .descricao-animais p {
   font-family: Helvetica, arial;
   margin-bottom: 1rem;
+}
+
+.js .descricao-animais {
+  display: none;
+}
+
+.descricao-animais.ativo {
+  display: block;
+  animation: textoAtivo 0.5s forwards;
+}
+
+@keyframes textoAtivo {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .img-animais::-webkit-scrollbar {
