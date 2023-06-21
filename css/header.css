@@ -1,0 +1,18 @@
+nav {
+  background: #ffbb55;
+  padding: 10px;
+  margin-top: 30px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  font-family: monospace;
+  padding: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}

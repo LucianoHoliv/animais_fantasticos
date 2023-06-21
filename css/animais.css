@@ -1,0 +1,46 @@
+.animais-lista {
+  grid-column: 2;
+  max-height: 370px;
+  overflow-y: scroll;
+}
+
+.animais-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+  background: #fb5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+}
+
+.animais-descricao {
+  grid-column: 3;
+  padding: 0 20px;
+}
+
+.animais-descricao section {
+  margin-bottom: 100px;
+}
+
+.animais-descricao h2 {
+  color: #ee5544;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.animais-descricao h2::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 10px;
+  background: #fb5;
+  margin-right: 10px;
+}
+
+.animais-descricao p {
+  font-family: Helvetica, arial;
+  font-size: 1rem;
+  margin: 1rem 0;
+}

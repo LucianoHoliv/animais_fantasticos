@@ -1,0 +1,40 @@
+.faq {
+  grid-column: 2/4;
+  font-size: 1.3rem;
+  letter-spacing: unset;
+}
+
+.faq dt {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #ee5544;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.faq dt::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 10px;
+  background: #fb5;
+  margin-right: 10px;
+}
+
+.faq dt::after {
+  display: inline-block;
+  content: "》";
+  margin-left: 10px;
+  font-size: .9rem;
+  width: 7px;
+}
+
+.faq dt:hover::after {
+  transform: rotate(90deg);
+}
+
+.faq dd {
+  margin-left: 30px;
+}
