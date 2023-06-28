@@ -22,3 +22,15 @@
   background: #fb5;
   margin-right: 10px;
 }
+
+@media (max-width: 700px) {
+  .mapa,
+  .contato {
+    grid-column: 1/-1;
+    margin: 10px;
+  }
+
+  .contato li {
+    margin-left: 0;
+  }
+}

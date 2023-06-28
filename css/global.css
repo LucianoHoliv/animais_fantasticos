@@ -22,11 +22,11 @@ body {
 }
 
 header,
-footer {
+.copy {
   grid-column: 3/-1;
 }
 
-footer {
+.copy {
   background: #ffbb55;
   padding: 10px;
   margin: 30px 0;
@@ -52,4 +52,44 @@ main {
   line-height: 1;
   grid-column: 1/3;
   letter-spacing: 2px;
+}
+
+.js .js-AnimaScroll {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: .5s;
+}
+
+.js .js-AnimaScroll.ativo {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  header,
+  main,
+  .grid-section,
+  .copy {
+    grid-column: 1;
+  }
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-section h1 {
+    font-size: 3rem;
+  }
+  .animais-lista {
+    grid-column: 1;
+    padding: 10px;
+  }
+
+  .copy {
+    margin-bottom: 0;
+  }
 }

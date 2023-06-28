@@ -19,8 +19,28 @@
   padding: 0 20px;
 }
 
+.js .animais-descricao section {
+  display: none;
+}
+
 .animais-descricao section {
   margin-bottom: 100px;
+}
+
+.animais-descricao section.ativo {
+  display: block;
+  animation: tab .9s;
+}
+
+@keyframes tab{
+from {
+  opacity: 0;
+  transform: translateX(-20px)
+}
+to {
+  opacity: 1;
+  transform: translateX(0)
+}
 }
 
 .animais-descricao h2 {

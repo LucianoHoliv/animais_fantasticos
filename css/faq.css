@@ -12,6 +12,7 @@
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   position: relative;
+  cursor: pointer;
 }
 
 .faq dt::before {
@@ -27,14 +28,43 @@
   display: inline-block;
   content: "》";
   margin-left: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   width: 7px;
 }
 
-.faq dt:hover::after {
+.faq dt.ativo::after {
   transform: rotate(90deg);
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: accordion 0.3s ease-out;
+}
+
+@keyframes accordion {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .faq dd {
   margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+  .faq,
+  .mapa,
+  .contato {
+    grid-column: 1/3;
+  }
 }
