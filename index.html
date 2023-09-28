@@ -16,7 +16,7 @@
     <header>
         <!--MENU TOPO-->
         <nav>
-            <ul class="js-nav">
+            <ul data-anime="smooth-scroll">
                 <li><a href="#animais">Animais</a></li>
                 <li><a href="./">Sobre</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -27,7 +27,7 @@
     </header>
     <main>
         <!--Animais fantásticos-->
-        <section class="grid-section js-AnimaScroll" id="animais">
+        <section class="grid-section" data-anime="scroll" id="animais">
             <h1 class="titulo">Animais Fantásticos</h1>
             <ul class="animais-lista">
                 <li><img src="img/imagem1.jpg" alt="raposa"></li>
@@ -37,8 +37,8 @@
                 <li><img src="img/imagem5.jpg" alt="macaco"></li>
                 <li><img src="img/imagem6.jpg" alt="leão"></li>
             </ul>
-            <div class="animais-descricao">
-                <section>
+            <div class="animais-descricao" data-tab="content">
+                <section data-anime='show-right'>
                     <h2>Raposa</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -52,7 +52,7 @@
                         porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
                     </p>
                 </section>
-                <section>
+                <section data-anime="show-down">
                     <h2>Esquilo</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -69,7 +69,7 @@
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
                         porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
                 </section>
-                <section>
+                <section data-anime="show-down">
                     <h2>Urso</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -83,7 +83,7 @@
                         porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
                     </p>
                 </section>
-                <section>
+                <section data-anime="show-right">
                     <h2>Lobo</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -104,7 +104,7 @@
                         dos felídeos.
                     </p>
                 </section>
-                <section>
+                <section data-anime="show-right">
                     <h2>Macaco</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -114,7 +114,7 @@
                         dos felídeos.
                     </p>
                 </section>
-                <section>
+                <section data-anime="show-down">
                     <h2>Leão</h2>
                     <p>
                         As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de
@@ -131,7 +131,7 @@
             </div>
         </section>
         <!--FAQ-->
-        <section class="grid-section js-AnimaScroll" id="faq">
+        <section class="grid-section" data-anime="scroll" id="faq">
             <h1 class="titulo">FAQ</h1>
             <dl class="faq js-accordion">
                 <dt>Qual a idade dos animais?</dt>
@@ -149,7 +149,7 @@
             </dl>
         </section>
         <!--Contato-->
-        <section class="grid-section js-AnimaScroll" id="contato">
+        <section class="grid-section" data-anime="scroll" id="contato">
             <h1 class="titulo">Contato</h1>
             <img class="mapa" src="img/mapa.png" alt="map">
             <ul class="contato">

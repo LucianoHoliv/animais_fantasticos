@@ -19,7 +19,7 @@
   padding: 0 20px;
 }
 
-.js .animais-descricao section {
+[data-tab='content'] section {
   display: none;
 }
 
@@ -27,20 +27,38 @@
   margin-bottom: 100px;
 }
 
-.animais-descricao section.ativo {
+[data-tab='content'] section.ativo {
   display: block;
-  animation: tab .9s;
 }
 
-@keyframes tab{
-from {
-  opacity: 0;
-  transform: translateX(-20px)
+[data-tab='content'] section.ativo.show-right {
+  animation: show-right 0.9s;
 }
-to {
-  opacity: 1;
-  transform: translateX(0)
+
+[data-tab='content'] section.ativo.show-down {
+  animation: show-down 0.9s;
 }
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animais-descricao h2 {
